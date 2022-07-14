@@ -39,10 +39,6 @@
         type="pattern"
         url=" https://ronnelbillones.github.io/Sheesh.github.io/marker/pattern-philippines.patt"
       >
-      <a-marker
-      type="pattern"
-      url=" https://ronnelbillones.github.io/Sheesh.github.io/marker/pattern-usa.patt"
-    >
     
     <a-entity id="entity" look-at="[camera]">
       <a-entity
@@ -54,17 +50,22 @@
           gesture-handler
         >
         </a-entity>
-        
-            <a-entity
-                gltf-model="#usa" 
-                scale="1 1 1" 
-                position = "-1 0 0" 
-          animation-mixer = "clip:KeyAction"
-            class="clickable"
-                gesture-handler
-              >
-              </a-entity>
 
+              <a-marker
+        type="pattern"
+        url=" https://ronnelbillones.github.io/Sheesh.github.io/marker/pattern-philippines.patt"
+      >
+    
+    <a-entity id="entity" look-at="[camera]">
+      <a-entity
+          gltf-model="#philippines" 
+          scale="1 1 1" 
+          position = "0 0 0" 
+	animation-mixer = "clip:KeyAction"
+	  class="clickable"
+          gesture-handler
+        >
+        </a-entity>
 
 	<a-sound src=#song autoplay="true"> </a-sound>
 	</a-entity>
