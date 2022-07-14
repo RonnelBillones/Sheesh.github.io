@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Nationl Anthem of Country</title>
+    <title>National Anthem of Country</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
@@ -22,15 +22,15 @@
       gesture-detector
       id="scene"
     >
-      <audio id="song" src="./assets/philippines.mp3"></audio>
 	    
       <a-marker
+
         type="pattern"
         url="https://ronnelbillones.github.io/Sheesh.github.io/marker/pattern-philippines.patt"
       >
-   
+      <audio id="song" src="./assets/philippines.mp3"></audio>
         </a-entity>
-	<a-sound src=#song autoplay="true"> </a-sound>
+	<a-sound src=#song autoplay="false"> </a-sound>
 	</a-entity>
       </a-marker>
       
